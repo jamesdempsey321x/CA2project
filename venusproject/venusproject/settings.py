@@ -29,7 +29,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'be62d4f3ec92e7'
+EMAIL_HOST_PASSWORD = 'd82dd3466e3f97'
+EMAIL_PORT = '2525'
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,15 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'users',
-    'customers',
-<<<<<<< HEAD
-=======
-    'home',
-    'shop',
-    'cart',
-
->>>>>>> 976445553c00dab868649ea9df7e6e99e970752c
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -143,4 +138,3 @@ MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = 'users.CustomUser'
