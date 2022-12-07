@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block img %}
+<div>
+    <img src="{% static 'images/InvolvePage.jpg' %}" class="img-fluid" id="mainimage">
+</div>
+{% endblock img %}
+
+{% block linkcss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/involve.css' %}">
+<title>GetInvolved</title>
+{% endblock linkcss %}
+
+{% block linkJS %}
+<script src="{% static 'js/involve.js' %}"></script>
+{% endblock linkJS %}
+
+{% block content %}
+<div class="container-fluid" id="containerfirst">
+    <center>
+        <h3>
+            Become a Volunteer
+        </h3>
+        <div class="container-fluid">
+            Thank you for your interest in helping us.
+        </div>
+        <div class="container-fluid">
+            We would like to ask you to subscribe to at least one of the platforms below:
+        </div>
+        <div class="container-fluid">
+            <ul>
+                <a href="https://www.thevenusproject.com/?page_id=4760">
+                    <li style="text-align: left">
+                        Our Monthly Newsletter
+                    </li>
+                </a>
+                <a href="https://www.facebook.com/TheVenusProjectGlobal/">
+                    <li style="text-align: left">
+                        Our Facebook page
+                    </li>
+                </a>
+                <a href="https://twitter.com/TheVenusProject">
+                    <li style="text-align: left">
+                        Our Twitter account
+                    </li>
+                </a>
+                <a href="https://www.instagram.com/thevenusproject/">
+                    <li style="text-align: left">
+                        Our Instagram account
+                    </li>
+                </a>
+                <a href="https://www.pinterest.com/thevenusproject/">
+                    <li style="text-align: left">
+                        Our Pinterest account
+                    </li>
+                </a>
+                <a href="https://www.youtube.com/channel/UCPNMR_iABvyFmc3G9i1r3Lw">
+                    <li style="text-align: left">
+                        Our Youtube account
+                    </li>
+                </a>
+                <a href="https://www.linkedin.com/company/the-venus-project/">
+                    <li style="text-align: left">
+                        Our LinkedIn page
+                    </li>
+                </a>
+                <a href="https://peakd.com/@thevenusproject">
+                    <li style="text-align: left">
+                        Our profile on Hive
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            Below you will find current volunteering opportunities. If you do not find anything that matches your
+            skills, please follow our news via the platforms above to learn about upcoming opportunities to help out.
+        </div>
+
+        <div class="row g-2">
+            {% for Involve in all_involve_list %}
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <div class="mt-3">
+                        {% if Involve.image %}
+                        <img src="{{ Involve.image.url }}" width="100%">
+                        {% endif %}
+                        <h3 class="mt-3">
+                            {{ Involve.title }}
+                        </h3>
+                        <span class="text justify-content mt-3">
+                            {{ Involve.description}}
+                        </span>
+                        <div class="d-block mt-3">
+                            <button class=" btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#Modal1">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </center>
+</div>
+{% endblock content %}
