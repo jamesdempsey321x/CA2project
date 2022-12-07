@@ -21,7 +21,12 @@ from .views import HomePageView, ContactPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('home/', HomePageView.as_view(), name = 'home'),
     path('contact/', ContactPageView.as_view(), name = 'contact'),
     path('', HomePageView.as_view(), name = ' '),
 ] 
+=======
+    path('', include('home.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+>>>>>>> 976445553c00dab868649ea9df7e6e99e970752c

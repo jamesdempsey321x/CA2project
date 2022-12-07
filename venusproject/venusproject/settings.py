@@ -41,6 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'customers',
+<<<<<<< HEAD
+=======
+    'home',
+    'shop',
+    'cart',
+
+>>>>>>> 976445553c00dab868649ea9df7e6e99e970752c
 ]
 
 MIDDLEWARE = [
@@ -123,6 +130,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder"
+]
+MEDIA_URL ='/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
+
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
