@@ -75,14 +75,14 @@
 
 @media (max-width: 1199.98px) {
     .responsive-font1 {
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
     }
 }
 
 @media (min-width: 1200px) {
     .responsive-font1 {
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
 }

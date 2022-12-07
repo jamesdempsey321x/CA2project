@@ -15,19 +15,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Link css file -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" id="cssLink">
     <!-- Link icon library(font awesome) -->
     <script src="https://kit.fontawesome.com/33f7703c38.js" crossorigin="anonymous"></script>
-    <title>
-        WelcomePage
-    </title>
 </head>
 
 <body id="body">
     <div>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navigationbar">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="{% static 'images/Logo.svg' %}" class="img-fluid" alt="Responsive image"
                     style="height: 50px; width: 100%; display: block;">
             </a>
@@ -38,8 +34,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item active" id="homeBTN">
+                        <a class="nav-link" href="{% url 'home' %}">
                             <i class="fa fa-fw fa-home" aria-hidden="true">
                             </i>
                             Home
@@ -48,35 +44,35 @@
                             </span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item" id="contactBTN">
+                        <a class="nav-link" href="{% url 'contact' %}">
                             <i class="fa fa-fw fa-envelope" aria-hidden="true">
                             </i>
                             Contact
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="aboutusBTN">
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-address-card">
                             </i>
                             About us
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="getinvolvedBTN">
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-bell-concierge">
                             </i>
                             Get Involved
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="newsBTN">
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-radio">
                             </i>
                             News
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="shopBTN">
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-shop">
                             </i>
@@ -85,14 +81,14 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item" id="shopBTN">
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-right-to-bracket">
                             </i>
                             Log in
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="signupBTN">
                         <a class="nav-link" href="#">
                             <i class="fa-solid fa-user-plus">
                             </i>
@@ -108,8 +104,8 @@
         <div id="yoast-breadcrumbs">
             <div class="container-fluid">
                 <span>
-                    <span>
-                        <a class="responsive-font1" id="textyoast">
+                    <span id="textyoastadd">
+                        <a class="responsive-font1" id="textyoast" href="{% url 'home' %}">
                             Home
                         </a>
                     </span>
