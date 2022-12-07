@@ -1,15 +1,20 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block img %}
 <div>
     <img src="{% static 'images/ContactPage.jpg' %}" class="img-fluid" id="mainimage">
 </div>
 {% endblock img %}
+
 {% block linkcss %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
 <title>Contact</title>
 {% endblock linkcss %}
 
+{% block linkJS %}
+<script src="{% static 'js/contact.js' %}"></script>
+{% endblock linkJS %}
 
 {% block content %}
 <div class="container-fluid" id="containerfirst">

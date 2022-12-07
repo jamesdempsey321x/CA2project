@@ -53,8 +53,8 @@
                             Contact
                         </a>
                     </li>
-                    <li class="nav-item" id="aboutusBTN">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item" id="aboutBTN">
+                        <a class="nav-link" href="{% url 'about' %}">
                             <i class="fa-solid fa-address-card">
                             </i>
                             About us
@@ -124,6 +124,8 @@
             </div>
         </footer>
     </div>
+    {% block linkJS %}
+    {% endblock linkJS %}
 </body>
 
 </html>
