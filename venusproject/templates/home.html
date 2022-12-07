@@ -1,61 +1,59 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block img %}
+<div>
+    <img src="{% static 'images/HomePage.jpg' %}" class="img-fluid" id="mainimage">
+</div>
+{% endblock img %}
+{% block linkcss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<title>WelcomePage</title>
+{% endblock linkcss %}
 {% block content %}
-
-<head>
-    <!-- Link css file -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
-    <title>WelcomePage</title>
-</head>
-
-<body>
-    <div class="container-fluid" id="containerfirst">
-        <h3>
-            The Venus Project is a non-profit organization that presents a new socio-economic model utilizing
-            science and technology toward social betterment to achieve a sustainable civilization of abundance for
-            all, without exception.
-        </h3>
-    </div>
-    <img src="{% static 'images/YoutubeEconomy.jpg' %}" class="img-fluid" href="#Geeks2" data-toggle="modal"
-        id="youtube">
-    <div class="bs-example">
-        <div id="Geeks2" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">
-                            Resource Based Economy
-                        </h4>
-                        <button onclick="var iframe = document.getElementById('Video1'); iframe.src = iframe.src;"
-                            type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            x
-                        </button>
-                    </div>
-                    <div class="embed-responsive embed-responsive-4by3" id="iframe1">
-                        <iframe class="embed-responsive-item" title="Introduction"
-                            src="https://www.youtube.com/embed/_EkMjTnWk14" allowfullscreen="" id="Video1">
-                        </iframe>
-                    </div>
+<div class="container-fluid" id="containerfirst">
+    <h3>
+        The Venus Project is a non-profit organization that presents a new socio-economic model utilizing
+        science and technology toward social betterment to achieve a sustainable civilization of abundance for
+        all, without exception.
+    </h3>
+</div>
+<img src="{% static 'images/YoutubeEconomy.jpg' %}" class="img-fluid" href="#Geeks2" data-toggle="modal" id="youtube">
+<div class="bs-example">
+    <div id="Geeks2" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Resource Based Economy
+                    </h4>
+                    <button onclick="var iframe = document.getElementById('Video1'); iframe.src = iframe.src;"
+                        type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        x
+                    </button>
+                </div>
+                <div class="embed-responsive embed-responsive-4by3" id="iframe1">
+                    <iframe class="embed-responsive-item" title="Introduction"
+                        src="https://www.youtube.com/embed/_EkMjTnWk14" allowfullscreen="" id="Video1">
+                    </iframe>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <h4 class="responsive-font1">The Venus Project is a non-profit organization that recognizes the important
-            connection between global
-            resource mismanagement and problems such as war, climate change, poverty, and hunger. In the broader
-            context, these are all detrimental results of the current socio-economic operating system. In response to
-            these challenges, our organization presents solutions through the holistic application of science and
-            technology; two areas in which recent advancements hold the potential to make far-reaching positive impacts.
-            However, while technology may succeed in gradually alleviating some of these problems, they cannot be
-            resolved by simply addressing symptoms, as we do now, because they are byproducts of a much larger problem.
-            Another major issue is that business interests currently require short-term planning and timely returns on
-            investments. For these reasons, in addition to our expanded technical approach, our proposals include an
-            alternative economic model which overcomes these artificial barriers to planetary wellbeing. Our
-            methodologies are designed to realize the full potential of science and technology to achieve social
-            betterment for all living systems. We advocate new ways of thinking and living to enable human beings,
-            technology, and nature to progress sustainably.</h4>
-    </div>
-</body>
-
+</div>
+<div class="container-fluid">
+    <h4 class="responsive-font1">The Venus Project is a non-profit organization that recognizes the important
+        connection between global
+        resource mismanagement and problems such as war, climate change, poverty, and hunger. In the broader
+        context, these are all detrimental results of the current socio-economic operating system. In response to
+        these challenges, our organization presents solutions through the holistic application of science and
+        technology; two areas in which recent advancements hold the potential to make far-reaching positive impacts.
+        However, while technology may succeed in gradually alleviating some of these problems, they cannot be
+        resolved by simply addressing symptoms, as we do now, because they are byproducts of a much larger problem.
+        Another major issue is that business interests currently require short-term planning and timely returns on
+        investments. For these reasons, in addition to our expanded technical approach, our proposals include an
+        alternative economic model which overcomes these artificial barriers to planetary wellbeing. Our
+        methodologies are designed to realize the full potential of science and technology to achieve social
+        betterment for all living systems. We advocate new ways of thinking and living to enable human beings,
+        technology, and nature to progress sustainably.</h4>
+</div>
 {% endblock content %}

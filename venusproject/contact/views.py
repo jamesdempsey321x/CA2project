@@ -4,6 +4,8 @@ from django.core.mail import send_mail
 from django.template.loader import render_to_string
 
 # Create your views here.
+
+
 def ContactView(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -20,10 +22,11 @@ def ContactView(request):
                 'subject': subject,
                 'message': message
             })
-            send_mail('The contact form subject', 'End', 'noreply@x00202628mytudublin.ie', ['X00202628@mytudublin.ie'], html_message=html)
+            send_mail('The contact form subject', 'End', 'noreply@x00202628mytudublin.ie',
+                      ['X00202628@mytudublin.ie'], html_message=html)
             return redirect('contact')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {
-        'form': form 
+        'form': form
     })

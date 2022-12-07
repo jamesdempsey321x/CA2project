@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Link css file -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" id="cssLink">
+    {% block linkcss %}
+    {% endblock linkcss %}
     <!-- Link icon library(font awesome) -->
     <script src="https://kit.fontawesome.com/33f7703c38.js" crossorigin="anonymous"></script>
 </head>
@@ -98,9 +100,8 @@
                 </ul>
             </div>
         </nav>
-        <div>
-            <img src="{% static 'images/HomePage.jpg' %}" class="img-fluid" id="mainimage">
-        </div>
+        {% block img %}
+        {% endblock img %}
         <div id="yoast-breadcrumbs">
             <div class="container-fluid">
                 <span>

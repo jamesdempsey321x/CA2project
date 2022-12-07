@@ -33,6 +33,7 @@ EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = 'be62d4f3ec92e7'
 EMAIL_HOST_PASSWORD = 'd82dd3466e3f97'
 EMAIL_PORT = '2525'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -129,9 +130,8 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder"
 ]
-MEDIA_URL ='/media/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
-
 
 
 # Default primary key field type

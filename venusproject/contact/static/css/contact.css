@@ -96,7 +96,7 @@
 
     margin-top: 5px;
     background: blue;
-    
+
 }
 
 /*--Styling the card itself and the items inside of it End--*/
@@ -138,3 +138,11 @@
 }
 
 /*--Styling the container that holds the location from google maps End--*/
+/*Styling the background image Start*/
+
+#mainimage {
+
+    width: 100%;
+    height: 350px;
+
+}

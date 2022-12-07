@@ -1,20 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block img %}
+<div>
+    <img src="{% static 'images/ContactPage.jpg' %}" class="img-fluid" id="mainimage">
+</div>
+{% endblock img %}
+{% block linkcss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+<title>Contact</title>
+{% endblock linkcss %}
+
+
 {% block content %}
-
-<head>
-    <!-- Link css file -->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
-    <title>Contact</title>
-</head>
-
-<body>
-    <div class="container-fluid" id="containerfirst">
-        <center>
-            <h3>
-                To contact us, please fill the form bellow.
-            </h3>
-            <form method="post" action=".">
+<div class="container-fluid" id="containerfirst">
+    <center>
+        <h3>
+            To contact us, please fill the form bellow.
+        </h3>
+        <form method="post" action=".">
             <div class="card">
                 <div class="card-body">
                     <div class="form-header blue accent-1">
@@ -33,9 +36,9 @@
                                 Your name
                             </label>
                         </i>
-                                {% csrf_token %}
+                        {% csrf_token %}
 
-                                {{ form.name }}
+                        {{ form.name }}
                     </div>
                     <div class="md-form">
                         <i class="fas fa-envelope prefix grey-text" aria-hidden="true">
@@ -43,9 +46,9 @@
                                 Your email
                             </label>
                         </i>
-                            {% csrf_token %}
+                        {% csrf_token %}
 
-                            {{ form.email }}
+                        {{ form.email }}
                     </div>
                     <div class="md-form">
                         <i class="fas fa-tag prefix grey-text" aria-hidden="true">
@@ -53,9 +56,9 @@
                                 Subject
                             </label>
                         </i>
-                            {% csrf_token %}
+                        {% csrf_token %}
 
-                            {{ form.subject }}
+                        {{ form.subject }}
                     </div>
                     <div class="md-form">
                         <i class="fas fa-pencil-alt prefix grey-text" aria-hidden="true">
@@ -63,47 +66,45 @@
                                 Message
                             </label>
                         </i>
-                            {% csrf_token %}
+                        {% csrf_token %}
 
-                            {{ form.message }}
+                        {{ form.message }}
                     </div>
                     <div class="text-center">
-                            <button class="btn" id="sub">
-                                Submit
-                            </button>
+                        <button class="btn" id="sub">
+                            Submit
+                        </button>
                     </div>
                 </div>
             </div>
-            </form>
-            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14210.511107582743!2d-81.4311616!3d27.0734948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd30bf1f5f996b7a4!2sThe%20Venus%20Project!5e0!3m2!1sen!2sie!4v1649611732201!5m2!1sen!2sie"
-                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <h3>
-                Our address:
-            </h3>
-            <p>
-                <strong>
-                    The Venus Project
-                </strong>
-                <br>
-                21 Valley Lane
-                <br>
-                Venus, Florida 33960
-                <br>
-                United States
-                <br>
-            </p>
-            <h5>
-                Contact numbers:
-            </h5>
-            Phone: +1-863-465-0321
-            <p></p>  
-        </center>
-    </div>
-    <script src="{% static 'js/contact.js' %}"></script>
+        </form>
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14210.511107582743!2d-81.4311616!3d27.0734948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd30bf1f5f996b7a4!2sThe%20Venus%20Project!5e0!3m2!1sen!2sie!4v1649611732201!5m2!1sen!2sie"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h3>
+            Our address:
+        </h3>
+        <p>
+            <strong>
+                The Venus Project
+            </strong>
+            <br>
+            21 Valley Lane
+            <br>
+            Venus, Florida 33960
+            <br>
+            United States
+            <br>
+        </p>
+        <h5>
+            Contact numbers:
+        </h5>
+        Phone: +1-863-465-0321
+        <p></p>
+    </center>
+</div>
+<script src="{% static 'js/contact.js' %}"></script>
 {% endblock content%}
-</body>
-
