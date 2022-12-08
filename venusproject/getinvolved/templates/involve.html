@@ -92,7 +92,8 @@
                             {{ Involve.description}}
                         </span>
                         <div class="d-block mt-3">
-                            <button class=" btn btn-secondary btn-sm btn-block" data-toggle="modal" data-target="#Modal1">
+                            <button class=" btn btn-secondary btn-sm btn-block" data-toggle="modal"
+                                data-target="#Modal{{ Involve.id }}">
                                 Read More
                             </button>
                         </div>
@@ -103,4 +104,28 @@
         </div>
     </center>
 </div>
+{% for Involve in all_involve_list %}
+<div id="Modal{{ Involve.id }}" class="modal fade" style="text-align: left; display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    {{ Involve.title }}
+                </h4>
+            </div>
+            <div class="modal-body">
+                    {{ Involve.text|safe }}
+            </div><a>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </a>
+        </div><a>
+        </a>
+    </div><a>
+    </a>
+</div>
+{% endfor %}
 {% endblock content %}
