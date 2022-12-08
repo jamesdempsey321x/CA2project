@@ -7,5 +7,8 @@ class Involve(models.Model):
     description = models.CharField(max_length=200)
     text = models.TextField()
 
-    def __str__(self):
-        return self.title
+    class Meta:
+        ordering = ('title',)
+        verbose_name = 'involved'
+        verbose_name_plural = 'involved'
+

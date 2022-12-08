@@ -1,0 +1,398 @@
+[
+    {
+        "model": "news.News",
+        "pk": 1,
+        "fields": {
+            "image": "covers/NewsPage1Image1.jpg",
+            "title": "New Visuals Of Our Next Phase, and Website Updates",
+            "link": "https://www.thevenusproject.com/building-and-launching-our-integrated-aquaponics-system/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 2,
+        "fields": {
+            "image": "covers/NewsPage1Image2.jpg",
+            "title": "Introducing The Venus Project Integrated Aquaponics System (#TVPIAS) in Kerala, India",
+            "link": "https://www.thevenusproject.com/introducing-the-venus-project-integrated-aquaponics-system-tvpias-in-kerala-india/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 3,
+        "fields": {
+            "image": "covers/NewsPage1Image3.jpg",
+            "title": "itiMgate Pandemics Through A Unified System: A Global Solution",
+            "link": "https://www.thevenusproject.com/mitigate-pandemics-through-a-unified-system-a-final-thought/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 4,
+        "fields": {
+            "image": "covers/NewsPage1Image4.jpg",
+            "title": "Canary in the Mine: A Thought on the Economic Crisis",
+            "link": "https://www.thevenusproject.com/canary-in-the-mine-a-thought-on-the-economic-crisis/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 5,
+        "fields": {
+            "image": "covers/NewsPage1Image5.jpg",
+            "title": "Thinking in Systems for Global Well-Being: A Thought on the COVID19 Pandemic",
+            "link": "https://www.thevenusproject.com/thinking-in-systems-for-global-well-being/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 6,
+        "fields": {
+            "image": "covers/NewsPage1Image6.jpg",
+            "title": "The Venus Project Agenda for Year 2020",
+            "link": "https://www.thevenusproject.com/the-venus-project-agenda-for-year-2020/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 7,
+        "fields": {
+            "image": "covers/NewsPage1Image7.jpg",
+            "title": "FREE to Watch Now: A World Worth Imagining; Jacque Fresco – The Man with the Plan",
+            "link": "https://www.thevenusproject.com/watch-now-a-world-worth-imagining-jacque-fresco-the-man-with-the-plan/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 8,
+        "fields": {
+            "image": "covers/NewsPage1Image8.jpg",
+            "title": "Documentary Release: The Venus Project by Ecopreneur",
+            "link": "https://www.thevenusproject.com/documentary-release-the-venus-project-by-ecopreneur/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 9,
+        "fields": {
+            "image": "covers/NewsPage1Image9.jpg",
+            "title": "The Venus Project Receives Free Hosting Support From SiteGround",
+            "link": "https://www.thevenusproject.com/the-venus-project-receives-free-hosting-support-from-siteground/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 10,
+        "fields": {
+            "image": "covers/NewsPage1Image10.jpg",
+            "title": "Update on Roxanne Meadows’ talk at the UN",
+            "link": "https://www.thevenusproject.com/update-on-roxanne-meadows-talk-at-the-un/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 11,
+        "fields": {
+            "image": "covers/NewsPage1Image11.jpg",
+            "title": "New Visuals Of Our Next Phase, and Website Updates",
+            "link": "https://www.thevenusproject.com/new-visuals-of-our-next-phase-and-website-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 12,
+        "fields": {
+            "image": "covers/NewsPage1Image12.jpg",
+            "title": "Roxanne Meadows to Speak at the 2019 NOVUS Summit at the UN",
+            "link": "https://www.thevenusproject.com/roxanne-meadows-to-speak-at-the-2019-novus-summit-at-the-un/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 13,
+        "fields": {
+            "image": "covers/NewsPage2Image13.jpg",
+            "title": "Trailer for New Documentary: “A World Worth Imagining”",
+            "link": "https://www.thevenusproject.com/trailer-for-new-documentary-a-world-worth-imagining/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 14,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "May 2019 Newsletter",
+            "link": "https://www.thevenusproject.com/may-2019-newsletter/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 15,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "April 2019 Updates",
+            "link": "https://www.thevenusproject.com/april-2019-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 16,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "March 2019 Updates",
+            "link": "https://www.thevenusproject.com/march-2019-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 17,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "February 2019 Updates",
+            "link": "https://www.thevenusproject.com/february-2019-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 18,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "January 2019 Updates",
+            "link": "https://www.thevenusproject.com/january-2019-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 19,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "December 2019 Updates",
+            "link": "https://www.thevenusproject.com/december-2018-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 20,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "November 2019 Updates",
+            "link": "https://www.thevenusproject.com/november-2018-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 21,
+        "fields": {
+            "image": "covers/NewsPage2Image21.jpg",
+            "title": "Major Motion Picture: History & Progress Report",
+            "link": "https://www.thevenusproject.com/major-motion-picture-history-progress-report/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 22,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "September 2018 Updates",
+            "link": "https://www.thevenusproject.com/september-2018-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 23,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "August 2018 Updates",
+            "link": "https://www.thevenusproject.com/august-2018-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 24,
+        "fields": {
+            "image": "covers/NewsPage2Image24.jpg",
+            "title": "The End of Capitalism, Redesign of Society and Rise of Resource Based Economy with Roxanne Meadows of The Venus Project",
+            "link": "https://www.thevenusproject.com/the-end-of-capitalism-redesign-of-society-and-rise-of-resource-based-economy-with-roxanne-meadows-of-the-venus-project/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 25,
+        "fields": {
+            "image": "covers/NoImage.jpg",
+            "title": "July 2018 Updates",
+            "link": "https://www.thevenusproject.com/july-2018-updates/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 26,
+        "fields": {
+            "image": "covers/NewsPage3Image26.jpg",
+            "title": "Meet “The Venus Project”: The people who are preparing for the day when money will be meaningless",
+            "link": "https://www.thevenusproject.com/meet-the-venus-project-people-preparing-for-the-day-when-money-will-be-meaningless/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 27,
+        "fields": {
+            "image": "covers/NewsPage3Image27.jpg",
+            "title": "The Venus Project believes in a “World Without Crime”",
+            "link": "https://www.thevenusproject.com/venus-project-believes-world-without-crime/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 28,
+        "fields": {
+            "image": "covers/NewsPage3Image28.jpg",
+            "title": "Fresco, The Engineer, Philosopher, Who Did Not Go To School",
+            "link": "https://www.thevenusproject.com/fresco-engineer-philosopher-not-go-school/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 29,
+        "fields": {
+            "image": "covers/NewsPage3Image29.jpg",
+            "title": "The Venus Project’s Research Center Survives Hurricane Irma",
+            "link": "https://www.thevenusproject.com/venus-projects-research-center-survives-hurricane-irma/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 30,
+        "fields": {
+            "image": "covers/NewsPage3Image30.jpg",
+            "title": "Roxanne Meadows: We Must Change or Humanity Will Continue to Suffer – Part 2",
+            "link": "https://www.thevenusproject.com/roxanne-meadows-must-change-humanity-will-continue-suffer-part-2/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 31,
+        "fields": {
+            "image": "covers/NewsPage3Image31.jpg",
+            "title": "Roxanne Meadows: We Must Change or Humanity Will Continue to Suffer – Part 1",
+            "link": "https://www.thevenusproject.com/roxanne-meadows-must-change-humanity-will-continue-suffer-part-1/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 32,
+        "fields": {
+            "image": "covers/NewsPage3Image32.jpg",
+            "title": "Positive Head interviews Roxanne Meadows",
+            "link": "https://www.thevenusproject.com/positive-head-interviews-roxanne-meadows/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 33,
+        "fields": {
+            "image": "covers/NewsPage3Image33.jpg",
+            "title": "Ulyces: This futuristic city project is perhaps the key to a world without money",
+            "link": "https://www.thevenusproject.com/ulyces-futuristic-city-project-perhaps-key-world-without-money/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 34,
+        "fields": {
+            "image": "covers/NewsPage3Image34.jpg",
+            "title": "An Open Letter from Roxanne Meadows",
+            "link": "https://www.thevenusproject.com/open-letter-roxanne-meadows/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 35,
+        "fields": {
+            "image": "covers/NewsPage3Image35.jpg",
+            "title": "The End of Capitalism, Redesign of Society and Rise of Resource Based Economy with Roxanne Meadows of The Venus Project",
+            "link": "GQ: The Project That Seeks to Save the World Through Technology"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 36,
+        "fields": {
+            "image": "covers/NewsPage3Image36.jpg",
+            "title": "The Venus Project presented on The Sustainable Living Podcast",
+            "link": "https://www.thevenusproject.com/venus-project-presented-sustainable-living-podcast/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 37,
+        "fields": {
+            "image": "covers/NewsPage4Image37.jpg",
+            "title": "NowThis Future: This man is trying to create a world without money",
+            "link": "https://www.thevenusproject.com/nowthis-future-man-trying-create-world-without-money/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 38,
+        "fields": {
+            "image": "covers/NewsPage4Image38.jpg",
+            "title": "Konbini: This Group Wants To Engineer A New Civilization With No War, Poverty Or Hunger",
+            "link": "https://www.thevenusproject.com/konbini-group-wants-engineer-new-civilization-no-war-poverty-hunger/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 39,
+        "fields": {
+            "image": "covers/NewsPage4Image39.jpg",
+            "title": "Inhabitat: The Venus Project Envisions a Sustainable Redesign of our Cities and Civilization",
+            "link": "https://www.thevenusproject.com/inhabitat-venus-project-envisions-sustainable-redesign-cities-civilization/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 40,
+        "fields": {
+            "image": "covers/NewsPage4Image40.jpg",
+            "title": "Baker Museum features Jacque Fresco exhibit",
+            "link": "https://www.thevenusproject.com/baker-museum-features-jacque-fresco-exhibit/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 41,
+        "fields": {
+            "image": "covers/NewsPage4Image41.jpg",
+            "title": "United Nations Award Given to Jacque Fresco for City Design/Community",
+            "link": "https://www.thevenusproject.com/united-nations-award-given-jacque-fresco-city-designcommunity/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 42,
+        "fields": {
+            "image": "covers/NewsPage4Image42.jpg",
+            "title": "Opinions Slow Down Progress",
+            "link": "https://www.thevenusproject.com/opinions/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 43,
+        "fields": {
+            "image": "covers/NewsPage4Image43.jpg",
+            "title": "The Insufficiencies of Language",
+            "link": "https://www.thevenusproject.com/the-insufficiencies-of-language/"
+        }
+    },
+    {
+        "model": "news.News",
+        "pk": 44,
+        "fields": {
+            "image": "covers/NewsPage4Image44.jpg",
+            "title": "Jacque Fresco’s Centennial Celebration",
+            "link": "https://www.thevenusproject.com/jacque-frescos-centennial-celebration/"
+        }
+    }
+]

@@ -23,10 +23,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HomePageView.as_view(), name = ' '),
-    path('home', HomePageView.as_view(), name = 'home'),
-    path('contact', ContactView, name = 'contact'),
-    path('about', AboutPageView.as_view(), name = 'about'),
-    path('involve', include('getinvolved.urls') )
+    path('', HomePageView.as_view(), name=' '),
+    path('home', HomePageView.as_view(), name='home'),
+    path('contact', ContactView, name='contact'),
+    path('about', AboutPageView.as_view(), name='about'),
+    path('involve', include('getinvolved.urls')),
+    path('news', include('news.urls'))
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
