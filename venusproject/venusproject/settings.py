@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'contact',
     'getinvolved',
     'news',
+    'shop',
 ]
 
 MIDDLEWARE = [
