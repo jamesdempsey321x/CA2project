@@ -6,3 +6,4 @@ Vlad - Started contact app, finished the template design, and set up email syste
 Vlad - Created the about page.
 Vlad - Started getinvolved app, used modals.
 Vlad - Started news app, used a JSON file to populate the database with objects, used paginator aswell.
+James - Started shop app, used JSON file to populate the database and added images.
