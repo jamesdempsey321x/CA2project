@@ -75,7 +75,7 @@
                         </a>
                     </li>
                     <li class="nav-item" id="shopBTN">
-                        <a class="nav-link" href="{% url 'shop' %}">
+                        <a class="nav-link" href="{% url 'shop:all_prod_list' %}">
                             <i class="fa-solid fa-shop">
                             </i>
                             Shop
@@ -110,6 +110,8 @@
                             Home
                         </a>
                     </span>
+                    {% block shopprod %}
+                    {% endblock shopprod %}
                 </span>
             </div>
         </div>

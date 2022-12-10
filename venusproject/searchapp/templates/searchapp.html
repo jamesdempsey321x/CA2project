@@ -25,10 +25,13 @@
         <div class="card">
             <div class="card-body">
                 <div class="form-header blue accent-1">
-                    <form class="d-flex" action="{% url 'searchapp:searchResult' %}" method="get">
+                    <form class="d-flex" action="" method="get">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
                         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                     </form>
+                    <div>
+                        <p class="text-center my_search_text">Results for: <b>"{{ query }}"</b></p>
+                    </div>                        
                 </div>
             </div>
         </div>
@@ -48,14 +51,18 @@
                     </div>
                 </div>
             </div>
+            {% empty %}
+            <div class="row mx-auto">
+                <p class="text-center my_search_text">0 results found.</p>
+            </div>
             {% endfor %}
         </div>
         
         <div id="paginator">
             <span class="step-links">
                 {% if page_obj.has_previous %}
-                <a href="?page=1"><button type="button" class="btn btn-outline-secondary btn-sm">first</button></a>
-                <a href="?page={{ page_obj.previous_page_number }}"><button type="button" class="btn btn-outline-secondary btn-sm">previous</button></a>
+                <a href="?page={{1}}&q={{ query }}"><button type="button" class="btn btn-outline-secondary btn-sm">first</button></a>
+                <a href="?page={{ page_obj.previous_page_number }}&q={{ query }}"><button type="button" class="btn btn-outline-secondary btn-sm">previous</button></a>
                 {% endif %}
         
                 <span class="current">
@@ -63,8 +70,8 @@
                 </span>
         
                 {% if page_obj.has_next %}
-                    <a href="?page={{ page_obj.next_page_number }}"><button type="button" class="btn btn-outline-secondary btn-sm">next</button></a>
-                    <a href="?page={{ page_obj.paginator.num_pages }}"><button type="button" class="btn btn-outline-secondary btn-sm">last &raquo;</button></a>
+                    <a href="?page={{ page_obj.next_page_number }}&q={{ query }}"><button type="button" class="btn btn-outline-secondary btn-sm">next</button></a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}&q={{ query }}"><button type="button" class="btn btn-outline-secondary btn-sm">last &raquo;</button></a>
                 {% endif %}
             </span>
         </div>

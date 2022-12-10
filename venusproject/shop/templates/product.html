@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block img %}
+<div>
+  <img src="{% static 'images/IObitPage.png' %}" class="img-fluid" id="mainimage">
+</div>
+{% endblock img %}
+
+{% block linkcss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/category.css' %}">
+<title>Shop</title>
+{% endblock linkcss %}
+
+{% block linkJS %}
+<script src="{% static 'js/shop.js' %}"></script>
+{% endblock linkJS %}
+
+{% block shopprod %}
+>><a href="{{ product.category.get_absolute_url }}" id="textyoastsecond">{{product.category}}</a>>><a
+  id="textyoastsecond">
+  {{product.name}}</a>
+{% endblock shopprod %}
+
+{% block content %}
+<div class="container-fluid" id="containerfirst">
+  <div class="row g-2">
+    <div class="col-md-12">
+      <div class="card p-2">
+        <div class="mt-3">
+          <a style="text-decoration: none; color: black">
+            <img src="{{product.image.url}}" alt="{{product.name}}" width="50%">
+            <h6 class="mt-3">
+              <h1>{{product.name}}</h1>
+              <p>€{{product.price}}</p>
+              <p>{{product.description}}</p>
+              {% if product.price < 00.01 %}
+              <p style="color: Red;"><b>Free!</b></p>
+              <a href=""><button type="button" class="btn btn-success btn-rounded">Try out!</button></a>
+              {% else %}
+              <a href=""><button type="button" class="btn btn-success btn-rounded">Add to Cart</button></a>
+              {% endif %}
+            </h6>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

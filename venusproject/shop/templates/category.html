@@ -20,16 +20,35 @@
 
 <div class="container-fluid" id="containerfirst">
     <center>
+        <div>
+            <h3>Welcome to our shop, please click the category you are interested in.</h3>
+        </div>
         <div class="row g-2">
-            {% for category in links %}
+            {% for cat in links %}
             <div class="col-md-3">
                 <div class="card p-2">
                     <div class="mt-3">
                         <a href="{{ cat.get_absolute_url }}" style="text-decoration: none; color: black">
-                            <img src="{{ category.image.url }}" width="100%">
+                            <img src="{{ cat.image.url }}" width="100%">
                             <h6 class="mt-3">
-                                {{ category.name }}
+                                {{ cat.name }}
                             </h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row g-2" id="products">
+            {% for product in prods %}
+            <div class="col-md-12">
+                <div class="card p-2">
+                    <div class="mt-3">
+                        <a href="{{ product.get_absolute_url }}" style="text-decoration: none; color: black">
+                            <img src="{{ product.image.url }}" width="50%">
+                            <h1 class="mt-3" style="font-size:3vw;">
+                                {{ product.name }}
+                            </h1>
                         </a>
                     </div>
                 </div>

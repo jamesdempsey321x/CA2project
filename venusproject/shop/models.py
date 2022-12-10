@@ -25,26 +25,6 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
-class SubCategory(models.Model):
-    id = models.UUIDField(
-        primary_key=True,
-        default=uuid.uuid4,
-        editable=False
-    )
-    title = models.CharField(max_length=250, unique=True)
-    icon = models.ImageField(upload_to='subCategory', blank=True)
-
-    class Meta:
-        ordering = ('title',)
-        verbose_name = 'sub-category'
-        verbose_name_plural = 'sub-categories'
-
-    def get_absolute_url(self):
-        return reverse('shop:products_by_subcategory', args=[self.id])
-
-    def __str__(self):
-        return self.title
-
 class Product(models.Model):
     id = models.UUIDField(
         primary_key=True,
@@ -53,7 +33,6 @@ class Product(models.Model):
     name = models.CharField(max_length=250, unique=True)
     description = models.TextField(blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    subcategory = models.ForeignKey(SubCategory, on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to='product', blank=True)
     created = models.DateTimeField(auto_now_add=True, blank=True, null=True)
@@ -65,7 +44,7 @@ class Product(models.Model):
         verbose_name_plural = 'products'
 
     def get_absolute_url(self):
-        return reverse('shop:product_detail', args=[self.category.id, self.subcategory.id, self.id])
+        return reverse('shop:products_details', args=[self.category.id, self.id])
 
     def __str__(self):
         return self.name
