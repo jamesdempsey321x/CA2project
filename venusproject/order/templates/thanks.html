@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block img %}
+<div>
+    <img src="{% static 'images/CartPage.png' %}" class="img-fluid" id="mainimage">
+</div>
+{% endblock img %}
+
+{% block linkcss %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/cart.css' %}">
+<title>Shop</title>
+{% endblock linkcss %}
+
+{% block linkJS %}
+<script src="{% static 'js/cart.js' %}"></script>
+{% endblock linkJS %}
+{% block content %}
+    <div>
+        <div class="text-center">
+            <br>
+            <br>
+            <h1 class="text-center my_title">
+                Thanks for placing your order
+            </h1>
+            <br>
+            <br>
+            <p>Your order number is: <b>{{ customer_order.id }}</b></p>
+            <br>
+            <p>
+                We have received your order and will begin processing right 
+                away. For your records, an email confirmation has been sent to 
+                you. It contains details of the items you purchased.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+{% endblock %}

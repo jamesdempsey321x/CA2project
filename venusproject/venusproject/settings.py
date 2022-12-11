@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'shop',
     'searchapp',
     'cart',
+    'stripe',
+    'order',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +147,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STRIPE_SECRET_KEY = 'sk_test_51MDeitBV2eH2Ll2u7WtH5DYhWI7h9P1C8uptaoV6L3SpTwF4DQjZHuhYTip5EV6BinAgb4gk23ZKYXHUFbeeNT4r00aY90s4a3'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51MDeitBV2eH2Ll2uPogmusYOflAFlwUoqTtCHKIUla250Cdkgd2aag7NgupJ8iyka2HG5j0JCB9NSFu83ovJjXEJ00Nhm9d73l'
