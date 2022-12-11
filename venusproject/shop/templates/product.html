@@ -36,9 +36,9 @@
               <p>{{product.description}}</p>
               {% if product.price < 00.01 %}
               <p style="color: Red;"><b>Free!</b></p>
-              <a href=""><button type="button" class="btn btn-success btn-rounded">Try out!</button></a>
-              {% else %}
-              <a href=""><button type="button" class="btn btn-success btn-rounded">Add to Cart</button></a>
+              <a href="{% url 'cart:add_cart' product.id %}"><button type="button" class="btn btn-success btn-rounded">Try out!</button></a>
+              {% else %} 
+              <a href="{% url 'cart:add_cart' product.id %}"><button type="button" class="btn btn-success btn-rounded">Add to Cart</button></a>
               {% endif %}
             </h6>
           </a>

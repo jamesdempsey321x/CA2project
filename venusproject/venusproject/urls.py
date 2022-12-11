@@ -29,6 +29,7 @@ urlpatterns = [
     path('about', AboutPageView.as_view(), name='about'),
     path('involve', include('getinvolved.urls')),
     path('news', include('news.urls')),
-    path('shop/', include('shop.urls'))
+    path('shop/', include('shop.urls')),
+    path('cart/', include('cart.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
