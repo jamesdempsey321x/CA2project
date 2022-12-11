@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load crispy_forms_tags %}
 <html>
 
 <head>
@@ -92,20 +93,38 @@
                     {% endif %}
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0">
+                    {% if user.is_authenticated %}
+                    {% else %}
                     <li class="nav-item" id="loginBTN">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{% url 'login' %}">
                             <i class="fa-solid fa-right-to-bracket">
                             </i>
                             Log in
                         </a>
                     </li>
                     <li class="nav-item" id="signupBTN">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{% url 'signup' %}">
                             <i class="fa-solid fa-user-plus">
                             </i>
                             Sign up
                         </a>
                     </li>
+                    {% endif %}
+                    {% if user.is_authenticated %}
+                    <li class="nav-item" id="loginBTN">
+                        <a class="nav-link" href="#">
+                            Welcome, {{ user.username }}
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="signupBTN">
+                        <a class="nav-link" href="{% url 'logout' %}">
+                            <i class="fa-solid fa-user-plus">
+                            </i>
+                            Log out
+                        </a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>

@@ -28,34 +28,12 @@
         }
     },
     {
-        "model": "shop.subcategory",
-        "pk": "5a123a31-b115-444b-b206-e6346de6db23",
-        "fields": {
-            "title": "Windows"
-        }
-    },
-    {
-        "model": "shop.subcategory",
-        "pk": "42cdece7-3531-4fac-9716-ceb8875338df",
-        "fields": {
-            "title": "MAC"
-        }
-    },
-    {
-        "model": "shop.subcategory",
-        "pk": "3e56c01d-6b9c-4c6d-921d-f701d7537e68",
-        "fields": {
-            "title": "Android"
-        }
-    },
-    {
         "model": "shop.product",
         "pk": "9b3214d3-6ce8-4097-a7ab-9529a9ac073e",
         "fields": {
             "name": "Advanced SystemCare Free",
             "description": "Speed up computer, clean your PC, and protect your private data.",
             "category": "65d7d885-f5e6-4520-b16c-b2dd13e4679c",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "00.00",
             "created": "2022-12-09T1:12:17.802Z",
             "updated": "2022-12-09T1:12:17.802Z"
@@ -68,7 +46,6 @@
             "name": "Advanced SystemCare PRO",
             "description": "Advanced SystemCare PRO is a top-ranking PC optimizer. Now powered with AI, it gets smarter, quicker, and simpler.",
             "category": "65d7d885-f5e6-4520-b16c-b2dd13e4679c",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "89.97",
             "created": "2022-12-11T2:12:17.402Z",
             "updated": "2022-12-11T2:12:17.402Z"
@@ -81,7 +58,6 @@
             "name": "IOTransfer",
             "description": "Your Ultimate iPhone/iPad Manager and Video Downloader",
             "category": "65d7d885-f5e6-4520-b16c-b2dd13e4679c",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "119.97",
             "created": "2022-03-03T3:33:33.333Z",
             "updated": "2022-03-03T3:33:33.333Z"
@@ -94,7 +70,6 @@
             "name": "Macbooster",
             "description": "Your one-stop Mac maintenance tool to clean up 20 types of junk files and remove Mac malware and virus to protect your Mac, Besides, MacBooster can optimize Mac hard disk to boost your Mac to the peak performance.",
             "category": "65d7d885-f5e6-4520-b16c-b2dd13e4679c",
-            "subcategory": "42cdece7-3531-4fac-9716-ceb8875338df",
             "price": "90.80",
             "created": "2021-12-09T1:12:17.802Z",
             "updated": "2021-12-09T1:12:17.802Z"
@@ -107,7 +82,6 @@
             "name": "AMC Security",
             "description": "#1 All-in-one Mobile Cleaner and Booster Trusted by 20,000,000 Users",
             "category": "65d7d885-f5e6-4520-b16c-b2dd13e4679c",
-            "subcategory": "3e56c01d-6b9c-4c6d-921d-f701d7537e68",
             "price": "25.30",
             "created": "2022-02-22T1:22:22.222Z",
             "updated": "2022-02-22T1:22:22.222Z"
@@ -120,8 +94,7 @@
             "name": "Advanced SystemCare Ultimate",
             "description": "Block potential viruses, protect your privacy, and improve Windows performance completely in real time.",
             "category": "fce7a50d-fda9-437f-a725-c610a7862868",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
-            "price": "29.99",
+             "price": "29.99",
             "created": "2013-02-24T13:12:12.342Z",
             "updated": "2013-02-24T13:12:12.342Z"
         }
@@ -133,7 +106,6 @@
             "name": "IObit Malware Fighter Free",
             "description": "All-Around PC Protection with Powerful Anti-Malware and the Strongest Privacy Solutions",
             "category": "fce7a50d-fda9-437f-a725-c610a7862868",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "00.00",
             "created": "2014-03-24T13:12:12.342Z",
             "updated": "2014-03-24T13:12:12.342Z"
@@ -146,7 +118,6 @@
             "name": "IObit Malware Fighter PRO",
             "description": "Get Full-round & Real-time Protection for Your PC, Personal Data and Online Browsing with Award-winning Antivirus",
             "category": "fce7a50d-fda9-437f-a725-c610a7862868",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "54.95",
             "created": "2013-02-14T11:14:12.342Z",
             "updated": "2013-02-14T11:14:12.342Z"
@@ -159,7 +130,6 @@
             "name": "Protected Folder",
             "description": "Effective Files Protection Tool Guarantees the Security of Important Folders, Data and Privacy!",
             "category": "fce7a50d-fda9-437f-a725-c610a7862868",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "19.95",
             "created": "2013-02-24T13:12:12.332Z",
             "updated": "2013-02-24T13:12:12.332Z"
@@ -172,7 +142,6 @@
             "name": "Random Password Generator",
             "description": "Protect Your Privacy with Powerful Passwords & Secured Password Manager",
             "category": "fce7a50d-fda9-437f-a725-c610a7862868",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "00.00",
             "created": "2013-02-11T13:12:12.242Z",
             "updated": "2013-02-11T13:12:12.242Z"
@@ -185,7 +154,6 @@
             "name": "AppLock",
             "description": "Safeguard Privacy & Data Security",
             "category": "fce7a50d-fda9-437f-a725-c610a7862868",
-            "subcategory": "3e56c01d-6b9c-4c6d-921d-f701d7537e68",
             "price": "10.00",
             "created": "2022-12-11T13:12:12.342Z",
             "updated": "2022-12-11T13:12:12.342Z"
@@ -198,7 +166,6 @@
             "name": "IObit Uninstaller Free",
             "description": "Completely Uninstall Unwanted Software, Windows Apps & Browser Plug-ins",
             "category": "a386dd43-244b-4500-b7a1-73b7b435380f",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "00.00",
             "created": "2022-07-24T13:12:12.342Z",
             "updated": "2022-07-24T13:12:12.342Z"
@@ -211,7 +178,6 @@
             "name": "IObit Uninstaller PRO",
             "description": "Uninstall Programs Completely, Clean Leftovers Automatically, Remove Plug-ins Easily & Manage Software Safely",
             "category": "a386dd43-244b-4500-b7a1-73b7b435380f",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "16.77",
             "created": "2022-08-24T13:12:12.342Z",
             "updated": "2022-08-24T13:12:12.342Z"
@@ -224,7 +190,6 @@
             "name": "IObit Software Updater",
             "description": "Update Your Software Instantly to Keep All Software at Best",
             "category": "a386dd43-244b-4500-b7a1-73b7b435380f",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "12.97",
             "created": "2021-12-24T13:12:12.342Z",
             "updated": "2021-12-24T13:12:12.342Z"
@@ -237,7 +202,6 @@
             "name": "Smart Defrag",
             "description": "Fast & Deep Defrag to Optimize Hard Drive & PC Performance",
             "category": "a386dd43-244b-4500-b7a1-73b7b435380f",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "19.99",
             "created": "2022-12-24T13:12:13.342Z",
             "updated": "2022-12-24T13:12:13.342Z"
@@ -250,7 +214,6 @@
             "name": "Start Menu 8",
             "description": "Better Solution for Windows 8 & Windows 10 Start Menu!",
             "category": "a386dd43-244b-4500-b7a1-73b7b435380f",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "7.99",
             "created": "2022-12-24T12:12:12.342Z",
             "updated": "2022-12-24T12:12:12.342Z"
@@ -263,7 +226,6 @@
             "name": "IObit Unlocker",
             "description": "Never Worry about “Cannot Delete Files” on Your PC",
             "category": "a386dd43-244b-4500-b7a1-73b7b435380f",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "12.00",
             "created": "2022-12-23T13:12:12.342Z",
             "updated": "2022-12-23T13:12:12.342Z"
@@ -276,7 +238,6 @@
             "name": "IObit Undelete",
             "description": "Free Undelete Software for Deleted and Lost Files Recovery with One Click, Safe to Restore Documents, Videos, Graphic, Music, etc.",
             "category": "a386dd43-244b-4500-b7a1-73b7b435380f",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "00.00",
             "created": "2022-10-24T13:12:12.342Z",
             "updated": "2022-10-24T13:12:12.342Z"
@@ -289,7 +250,6 @@
             "name": "Driver Booster PRO",
             "description": "Automatically Update Over 8,500,000 Drivers & Game Components for Stable System Performance",
             "category": "05944232-43d2-4067-ad6e-6ec8856e5f0c",
-            "subcategory": "5a123a31-b115-444b-b206-e6346de6db23",
             "price": "22.95",
             "created": "2012-12-24T13:12:12.342Z",
             "updated": "2012-12-24T13:12:12.342Z"

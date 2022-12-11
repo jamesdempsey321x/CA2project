@@ -51,6 +51,9 @@ INSTALLED_APPS = [
     'cart',
     'stripe',
     'order',
+    'accounts',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +133,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
@@ -142,6 +145,9 @@ STATICFILES_FINDERS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+AUTH_USER_MODEL = 'accounts.customUser'
+LOGIN_REDIRECT_URL = 'shop:all_prod_list'
+LOGOUT_REDIRECT_URL = 'shop:all_prod_list'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

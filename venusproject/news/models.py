@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.urls import reverse
 # Create your models here.
 class News(models.Model):
     image = models.ImageField(upload_to='covers/', blank=True)
@@ -10,3 +10,6 @@ class News(models.Model):
         ordering = ('pk',)
         verbose_name = 'news'
         verbose_name_plural = 'news'
+
+    def get_absolute_url(self):
+        return reverse('news_detail', args=[str(self.id)])
